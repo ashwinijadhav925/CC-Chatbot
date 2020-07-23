@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>ChatBot</title>
+        <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/1.7.3/socket.io.js"></script>-->
+        <script src="/socket.io/socket.io.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <link href="/styles.css" rel="stylesheet" />
+    </head>
+    <body>
+
+        <div id="chatbot">
+            <h2>ChatBot-CC</h2>
+            <div id="feedback"></div>
+            
+            <div id="chat-window">
+                <div id="conversation"></div>
+                <div id="new"></div>                
+            </div>
+            
+            <input id="message" type="text" placeholder="Type a message" required/>
+            <button id="send">Send</button>
+        </div>
+
+
+    </body>
+    <script src="/index.js"></script>
+    <script>
+        var inp=document.getElementById("message");
+        inp.addEventListener("keyup",(event)=>{
+            if(event.keyCode===13){
+                event.preventDefault();
+                document.getElementById("send").click();
+            }
+        });
+    </script>
+</html>
