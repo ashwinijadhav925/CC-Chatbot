@@ -26,7 +26,6 @@ io.on('connection', (socket) => {
 
     // Handle typing event
     socket.on('typing', function(data){
-        //socket.broadcast.emit('typing', data);
         socket.emit('typing', data);
     });
 
@@ -40,29 +39,7 @@ io.on('connection', (socket) => {
     });
 });
 
-//CHAT BOT
-/*
-var menu=["Hi, how may I help you?<br/>",
-              "Please reply with the numbers to the corresponding questions.<br/> 1.What is IP? <br/>2. How is IP? <br/>3.Bitrix24 Issues <br/>4.IP training issues <br/> 5.Jobs available"];
 
-
-
-var replies = [
-              "Watch the below video <br/> <a href=\"https://www.youtube.com/watch?time_continue=142&v=OnKfrQrEOrk&feature=emb_logo\" target=\"_blank\">URL</a>: <iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/OnKfrQrEOrk\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe> <br/> Need any more assistance reply with *",
-              "Watch the below video <br/> <a href=\"https://www.youtube.com/watch?v=Hs9npUUIg4I&feature=emb_logo\" target=\"_blank\">URL</a>: <iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/Hs9npUUIg4I\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe> <br/> Need any more assistance reply with * ",
-              "Please reply with the corresponding <br/> Question number to get your queries Cleared.<br/> 1.question1 <br/> 2.Question2 <br/> 3.Question3 <br/> 4.Question4 <br/> 5.Question5 <br/> Reply with * to go back to the previous menu",
-              "<a href=\"https://docs.google.com/document/d/1fCdmvD2oaQ-9gxW8LN4SYazK_rfx2ylX_g3-4V7ujtc/edit\" target=\"_blank\">click here</a>",
-              "<a href=\"https://docs.google.com/document/d/1hvUpHJH5L8UTyets-gw8XYZ-gIv2jzofM3I6Uy7HuO8/edit\" target=\"_blank\">click here</a>"
-            ]; 
-
-*/
-
-
-
-
-var botreply={
-    message:''
-}
 
 var main_menu = [
   "Hi, how may I help you?",
@@ -209,6 +186,10 @@ var bitrix_issues_a = [
 
 ];
 
+
+var botreply={
+  message:''
+}
 
 var subreply='0';
 var wrongChoice="Please enter a valid option!!";
