@@ -2,6 +2,13 @@
   "name": "CC-Chatbot",
   "version": "1.0.0",
   "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lib": "yarn add express nodemon socket.io",
+    "cmd": "nodemon server",
+    "chat": "yarn lib && yarn cmd",
+    "start":"node server"
+  },
   "license": "MIT",
   "dependencies": {
     "express": "^4.17.1",

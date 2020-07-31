@@ -43,7 +43,7 @@ io.on('connection', (socket) => {
 
 var main_menu = [
   "Hi, how may I help you?",
-  "</br>Please reply with the numbers to the corresponding questions.<br/> 1. General IP Queries <br/>2. Learning Path Issues <br/>3.  Bitrix Issues" 
+  "</br>Please reply with the numbers to the corresponding questions.<br/> 1. General IP Queries <br/>2. Learning Path Issues <br/>3.  Bitrix Issues </br> Need more assistance press '*'" 
 ];
 var general_issues_q =[
 
@@ -75,7 +75,7 @@ var general_issues_a = [
 
 
 var lp_issues = [
-  "1. Learning Path 1 <br/>2. Learning Path 2  <br/>3. Learning Path 3  <br/>4. Live Projects"
+  "1. Learning Path 1 <br/>2. Learning Path 2  <br/>3. Learning Path 3  <br/>4. Live Projects  </br> Need more assistance press '*'"
 ];
 
 var lp1_q = [

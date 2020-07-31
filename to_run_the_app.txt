@@ -1,0 +1,7 @@
+To run the app follow the steps:
+
+1. Open terminal/command prompt.
+2. Enter the command
+      >> yarn start
+3. Go to browser and enter the below link
+      >> http://localhost:5000/
